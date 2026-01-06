@@ -1,0 +1,201 @@
+[i] creating dbt references
+[i] trying to reconstruct ss names from function macros
+[i] found verbose ss_ name function: 416f89c8
+[i] trying to reconstruct cpp names from strings
+[i] creating long strings
+  4. Creating a new segment  (00100000-0FFFFFFF) ... ... OK
+  5. Creating a new segment  (20000000-200FFFFF) ... ... OK
+  6. Creating a new segment  (20100000-3FFFFFFF) ... ... OK
+  7. Creating a new segment  (60000000-9FFFFFFF) ... ... OK
+  8. Creating a new segment  (E0001000-E0001FFF) ... ... OK
+  9. Creating a new segment  (E0002000-E0002FFF) ... ... OK
+ 10. Creating a new segment  (E000E000-E000ECFF) ... ... OK
+ 11. Creating a new segment  (E000ED00-E000EFFF) ... ... OK
+ 12. Creating a new segment  (E0005000-E0005FFF) ... ... OK
+ 13. Creating a new segment  (E00FF000-E00FFFFF) ... ... OK
+ 14. Creating a new segment  (EC000000-EC00FFFF) ... ... OK
+[i] trying to find hw_init() and rebuild mpu
+[i] hw_Init(): 40583676
+[i] hw_SwExceptionHandler(): 40586a4e
+[i] mpu tbl candidate at 41834d38
+ 15. Creating a new segment  (00000000-00000001) ... ... OK
+ 16. Creating a new segment  (00000001-00100000) ... ... OK
+ 17. Creating a new segment  (00000002-00100000) ... ... OK
+ 18. Creating a new segment  (00000003-00100000) ... ... OK
+ 19. Creating a new segment  (00000004-00100000) ... ... OK
+ 20. Creating a new segment  (00000005-00100000) ... ... OK
+ 21. Creating a new segment  (00000006-00100000) ... ... OK
+ 22. Creating a new segment  (00000007-00100000) ... ... OK
+ 23. Creating a new segment  (00000008-00100000) ... ... OK
+ 24. Creating a new segment  (00000009-00100000) ... ... OK
+ 25. Creating a new segment  (0000000A-00100000) ... ... OK
+ 26. Creating a new segment  (0000000B-00100000) ... ... OK
+ 27. Creating a new segment  (0000000C-00100000) ... ... OK
+ 28. Creating a new segment  (0000000D-00100000) ... ... OK
+ 29. Creating a new segment  (0000000E-00100000) ... ... OK
+ 30. Creating a new segment  (0000000F-00100000) ... ... OK
+ 31. Creating a new segment  (00000010-00100000) ... ... OK
+ 32. Creating a new segment  (00000011-00100000) ... ... OK
+ 33. Creating a new segment  (00000012-00100000) ... ... OK
+ 34. Creating a new segment  (00000013-00100000) ... ... OK
+ 35. Creating a new segment  (00000014-00100000) ... ... OK
+ 36. Creating a new segment  (00000015-00100000) ... ... OK
+ 37. Creating a new segment  (00000016-00100000) ... ... OK
+ 38. Creating a new segment  (000000FF-000001FE) ... ... OK
+ 39. Creating a new segment  (000001FE-00100000) ... ... OK
+[i] reached end of mpu tbl at 418350f8
+[i] hw_MpuInit(): 411b37d0
+[i] trying to identify MMU related opcodes in MAIN_file
+[i] trying to find scatter functions
+[i] scatterload(): 416bc0ac
+[i] scatter table at 40582040, size 512, table has 32 entries
+[i] processing scatter function at 416bc0e0
+[i] found scatterload_decompress() at 416bc0e0
+[i] processing scatter function at 416bc158
+[i] found scatterload_zeroinit() at 416bc158
+[i] processing scatter function at 416bc13c
+[i] found scatterload_copy() at 416bc13c
+[i] processing scatter - src:42461c78 dst: 44260000 size: 4 op: 416bc13c
+ 40. Creating a new segment  (44260000-44260004) ... ... OK
+[i] processing scatter - src:42461c7c dst: 4000000 size: 120348 op: 416bc13c
+ 41. Creating a new segment  (04000000-0401D61C) ... ... OK
+ 42. Creating a new segment  (0401D61C-0FFFFFFF) ... ... OK
+[i] processing scatter - src:4247f298 dst: 4800c30 size: 156 op: 416bc13c
+ 43. Creating a new segment  (04800C30-04800CCC) ... ... OK
+ 44. Creating a new segment  (04800CCC-0FFFFFFF) ... ... OK
+[i] processing scatter - src:4247f334 dst: 4800ccc size: 944 op: 416bc0e0
+ 45. Creating a new segment  (04800CCC-0480107C) ... ... OK
+     Deleting segment        (0480107C-0FFFFFFF) ...
+ 45. Creating a new segment  (0480107C-0FFFFFFF) ... ... OK
+[i] decompressed 944 bytes, from 4247f334 to 4800ccc
+[i] processing scatter - src:4247f410 dst: 100000 size: 75264 op: 416bc0e0
+ 46. Creating a new segment  (00100000-00112600) ... ... OK
+     Deleting segment        (00112600-04000000) ...
+ 46. Creating a new segment  (00112600-04000000) ... ... OK
+[i] decompressed 75264 bytes, from 4247f410 to 100000
+[i] processing scatter - src:4247f660 dst: 45700040 size: 1748160 op: 416bc0e0
+ 47. Creating a new segment  (45700040-458AAD00) ... ... OK
+[i] decompressed 1748160 bytes, from 4247f660 to 45700040
+[i] processing scatter - src:424a2a38 dst: 46100000 size: 88 op: 416bc13c
+ 48. Creating a new segment  (46100000-46100058) ... ... OK
+[i] processing scatter - src:424a2a94 dst: 46800000 size: 66316 op: 416bc0e0
+ 49. Creating a new segment  (46800000-4681030C) ... ... OK
+[i] decompressed 66316 bytes, from 424a2a94 to 46800000
+[i] processing scatter - src:424a2ca4 dst: 47400000 size: 1113408 op: 416bc13c
+ 50. Creating a new segment  (47400000-4750FD40) ... ... OK
+[i] processing scatter - src:425b29e4 dst: 47700000 size: 4128 op: 416bc13c
+ 51. Creating a new segment  (47700000-47701020) ... ... OK
+[i] processing scatter - src:425b3a04 dst: 4b700000 size: 4 op: 416bc13c
+ 52. Creating a new segment  (4B700000-4B700004) ... ... OK
+[i] processing scatter - src:425b3a08 dst: 4b700004 size: 559520 op: 416bc13c
+ 53. Creating a new segment  (4B700004-4B7889A4) ... ... OK
+[i] processing scatter - src:4263c3a8 dst: 4b8e7004 size: 3288 op: 416bc0e0
+ 54. Creating a new segment  (4B8E7004-4B8E7CDC) ... ... OK
+[i] decompressed 3288 bytes, from 4263c3a8 to 4b8e7004
+[i] processing scatter - src:4247f298 dst: 4800000 size: 3104 op: 416bc158
+ 55. Creating a new segment  (04800000-04800C20) ... ... OK
+ 56. Creating a new segment  (04800C20-04800C30) ... ... OK
+[i] processing scatter - src:4247f410 dst: 480107c size: 7656 op: 416bc158
+ 57. Creating a new segment  (0480107C-04802E64) ... ... OK
+     Deleting segment        (04802E64-0FFFFFFF) ...
+ 57. Creating a new segment  (04802E64-0FFFFFFF) ... ... OK
+[i] processing scatter - src:424a2a90 dst: 46100058 size: 6514740 op: 416bc158
+ 58. Creating a new segment  (46100058-4673688C) ... ... OK
+[i] processing scatter - src:424a2ca0 dst: 4681030c size: 146036 op: 416bc158
+ 59. Creating a new segment  (4681030C-46833D80) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 46840000 size: 61512 op: 416bc158
+ 60. Creating a new segment  (46840000-4684F048) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 47300000 size: 94568 op: 416bc158
+ 61. Creating a new segment  (47300000-47317168) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 47317400 size: 20560 op: 416bc158
+ 62. Creating a new segment  (47317400-4731C450) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 47337400 size: 1164 op: 416bc158
+ 63. Creating a new segment  (47337400-4733788C) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 4733a400 size: 211200 op: 416bc158
+ 64. Creating a new segment  (4733A400-4736DD00) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 47382000 size: 210464 op: 416bc158
+ 65. Creating a new segment  (47382000-473B5620) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 473ba000 size: 6028 op: 416bc158
+ 66. Creating a new segment  (473BA000-473BB78C) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 473bbc00 size: 16 op: 416bc158
+ 67. Creating a new segment  (473BBC00-473BBC10) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 473bbd00 size: 9348 op: 416bc158
+ 68. Creating a new segment  (473BBD00-473BE184) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 473c0d00 size: 4 op: 416bc158
+ 69. Creating a new segment  (473C0D00-473C0D04) ... ... OK
+[i] processing scatter - src:424a2ca4 dst: 473c1100 size: 1668 op: 416bc158
+ 70. Creating a new segment  (473C1100-473C1784) ... ... OK
+[i] processing scatter - src:425b3a04 dst: 47f00080 size: 13344 op: 416bc158
+ 71. Creating a new segment  (47F00080-47F034A0) ... ... OK
+[i] processing scatter - src:425b3a04 dst: 47f18000 size: 9056 op: 416bc158
+ 72. Creating a new segment  (47F18000-47F1A360) ... ... OK
+[i] processing scatter - src:425b3a04 dst: 47f1c000 size: 88 op: 416bc158
+ 73. Creating a new segment  (47F1C000-47F1C058) ... ... OK
+[i] processing scatter - src:425b3a04 dst: 47f20000 size: 316800 op: 416bc158
+ 74. Creating a new segment  (47F20000-47F6D580) ... ... OK
+[i] trying to identify PAL message related functions
+[i] pal_MsgSendTo(): 410a0464
+[i] pal_QueInit(): 40587ca8
+[i] pal_MsgDescriptorTbl(): 4014bc98
+[i] pal_MsgInit(): 410a039a
+[i] trying to identify PAL init and tasks
+[i] pal_TaskMngrInit(): 40cb344c
+[i] pal_TaskDescTbl(): 41839488
+[i] found real table start at 41839488 , first tasks is Acpm
+[i] found task init for Acpm at 410cc429
+[i] found task init for DM at 405fa9fd
+[i] found task init for BDA at 4174d247
+[i] found task init for CIQD_FE at 405fb0c7
+[i] found task init for TpTest at 4150bad3
+[i] found task init for DBGUNS at 40697c23
+[i] found task init for DBGCMD2 at 406957ed
+[i] found task init for PacketHandler at 41726491
+[i] found task init for DS_PBM at 41786c83
+[i] found task init for MTI at 40b71769
+[i] found task init for CC at 40e7f9f5
+[i] found task init for SM at 40c727cd
+[i] found task init for L1C at 416ea185
+[i] found task init for GDA at 417257ed
+[i] found task init for VSUP at 41721173
+[i] found task init for VCE at 410b6437
+[i] found task init for DS_SAEL3 at 416bc5dd
+[i] found task init for SIM at 40e20957
+[i] found task init for LteRrm at 40e98e8d
+[i] found task init for LteRrc at 4085cfe5
+[i] found task init for LTEL2LRx at 40829707
+[i] found task init for LTEL2TCM at 400a557
+[i] found task init for LTEL2HTx at 408efca9
+[i] found task init for LTE_TLP at 4095815d
+[i] found task init for LTE_DM at 40b94599
+[i] found task init for URRC at 410386f9
+[i] found task init for LLC at 414ff8e1
+[i] found task init for RLC at 416ea4d9
+[i] found task init for GLAPD at 416eca5f
+[i] found task init for SRM at 4176594d
+[i] found task init for REG_SAP at 4058eff7
+[i] found task init for SMS_SAP at 405b4b33
+[i] found task init for SIM_SAP at 4058ff47
+[i] found task init for DS_REG_SAP at 4058f1e7
+[i] found task init for DS_SMS_SAP at 405b4d6f
+[i] found task init for DS_SIM_SAP at 405901a7
+[i] found task init for MMC at 40592361
+[i] found task init for SR_IF at 40aac279
+[i] found task init for USAT at 4176dd97
+[i] found task init for LTE_TCPIP at 40a34895
+[i] found task init for IMS_CC at 4075b831
+[i] found task init for SHM at 4150e7c1
+[i] found task init for UL2DL at 4116a7ed
+[i] found task init for UDATA at 40fb8907
+[i] found task init for ephyFramework at 416dec55
+[i] found task init for recMailTask at 416df951
+[i] found task init for BTL at 4114132b
+[i] found task init for CLTCP at 40ad4fdd
+[i] found task init for SHUB_MSG at 4152af79
+[i] found task init for CPCOP at 41340855
+[i] found task init for CMMO at 40cfef29
+[i] found task init for LOWEST at 4150c3b1
+[i] 52 tasks found
+[i] build using ARM RVCT 422.06 [Build 50]
+[i] applying signature file /Applications/IDA Professional 9.2.app/Contents/MacOS/sig/arm/ARM_Compiler_5.06u6_b750.sig to all functions in database
+[i] checked 96239 functions for signature matches
+[i] post-processing runtime 5 minutes and 36 seconds
