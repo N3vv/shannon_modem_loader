@@ -86,7 +86,9 @@ def load_file(fd, neflags, format):
     idc.process_config_line("ARM_NO_ARM_THUMB_SWITCH = NO")
 
     # improve auto analysis
-    idc.process_config_line("ARM_REGTRACK_MAX_XREFS = 0")
+    #idc.process_config_line("ARM_REGTRACK_MAX_XREFS = 0")
+    # For ida pro 9.2, use REGTRACK_MAX_XREFS
+    idc.process_config_line("REGTRACK_MAX_XREFS = 0")
 
     # disable Coagulate and colapse
     idc.process_config_line("ANALYSIS = 0x9bff9ff7ULL")
